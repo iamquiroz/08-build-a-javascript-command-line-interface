@@ -1,12 +1,13 @@
 #!/usr/bin/env node
+'use strict';
 
-import chalk from "chalk";
-import clear from "clear";
-import figlet from "figlet";
+const chalk = require("chalk");
+const clear = require("clear");
+const figlet = require("figlet");
 
-import files from "./lib/files";
-import github from "./lib/github";
-import repo from "./lib/repo";
+const files = require("./lib/files.js");
+const github = require("./lib/github.js");
+const repo = require("./lib/repo.js");
 clear();
 
 console.log(
@@ -14,7 +15,7 @@ console.log(
 );
 
 if (files.directoryExists(".git")) {
-  console.log(chalkk.red("Already a Git repository!"));
+  console.log(chalk.red("Already a Git repository!"));
   process.exit();
 }
 
