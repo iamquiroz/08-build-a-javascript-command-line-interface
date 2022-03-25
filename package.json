@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/iamquiroz/08-build-a-javascript-command-line-interface.git"
   },
+  "type": "module",
   "keywords": [
     "Git",
     "CLI"
@@ -20,6 +21,8 @@
     "url": "https://github.com/iamquiroz/08-build-a-javascript-command-line-interface/issues"
   },
   "homepage": "https://github.com/iamquiroz/08-build-a-javascript-command-line-interface#readme",
+
+  
   "dependencies": {
     "@octokit/auth-basic": "^1.4.8",
     "@octokit/rest": "^18.12.0",
